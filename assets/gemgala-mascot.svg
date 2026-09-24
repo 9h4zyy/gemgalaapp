@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+    <defs>
+        <!-- Gold Coin Gradient -->
+        <linearGradient id="goldCoin" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffe853" />
+            <stop offset="60%" stop-color="#f6be1a" />
+            <stop offset="100%" stop-color="#df9a07" />
+        </linearGradient>
+        <!-- Collar Gradient -->
+        <linearGradient id="collarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#028557" />
+            <stop offset="100%" stop-color="#05a86f" />
+        </linearGradient>
+        <!-- Cat Body Gradient -->
+        <linearGradient id="catBodyGrad" x1="20%" y1="10%" x2="80%" y2="90%">
+            <stop offset="0%" stop-color="#ffffff" />
+            <stop offset="100%" stop-color="#f5fcf8" />
+        </linearGradient>
+        <!-- Drop Shadow Filter -->
+        <filter id="mascotGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0da982" flood-opacity="0.3" />
+        </filter>
+    </defs>
+
+    <!-- Outer White Sticker Outline for Contrast on Any Background -->
+    <g filter="url(#mascotGlow)">
+        <!-- Outer Sticker Stroke Background -->
+        <path d="M 68 32 C 60 22 51 24 48 36 C 44 48 45 62 43 78 C 35 90 32 110 37 130 C 40 142 45 156 52 166 C 58 174 72 178 88 178 C 112 178 126 178 136 176 C 146 174 153 168 155 158 C 160 136 160 115 157 95 C 162 92 167 82 163 70 C 158 58 147 62 143 68 C 141 52 136 34 130 26 C 122 18 114 26 109 35 C 96 30 82 30 68 32 Z"
+              fill="#ffffff" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" />
+
+        <!-- Main Cat Silhouette -->
+        <!-- Right Ear Outer -->
+        <path d="M 126 30 C 134 40 140 56 142 70 C 148 64 157 60 161 71 C 165 81 161 90 156 94 C 158 112 158 132 153 154 C 150 164 144 170 134 172 C 124 174 110 174 88 174 C 74 174 61 170 56 163 C 49 154 44 141 42 129 C 37 111 40 92 47 80 C 49 66 50 51 53 40 C 56 29 64 28 71 36 C 84 32 98 32 111 36 C 116 28 123 22 126 30 Z"
+              fill="url(#catBodyGrad)" stroke="#1a1e1c" stroke-width="4.5" stroke-linejoin="round" />
+
+        <!-- Orange Head Patch -->
+        <path d="M 111 36 C 117 38 123 44 126 53 C 130 63 138 67 148 66 C 145 54 139 42 132 34 C 126 27 120 28 115 32 Z"
+              fill="#f57c20" />
+
+        <!-- Ears Inner Pink -->
+        <!-- Left Inner Ear -->
+        <path d="M 59 45 C 61 38 65 37 68 43 C 70 48 70 55 68 62 C 63 60 60 54 59 45 Z" fill="#ff7568" />
+        <!-- Right Inner Ear -->
+        <path d="M 133 40 C 137 45 137 52 135 60 C 130 56 128 50 128 44 C 129 41 131 39 133 40 Z" fill="#ff7568" />
+
+        <!-- Green Collar -->
+        <path d="M 56 109 C 70 120 114 121 137 106 C 140 111 140 116 135 120 C 111 132 70 131 52 118 C 52 114 54 110 56 109 Z"
+              fill="url(#collarGrad)" stroke="#1a1e1c" stroke-width="4" stroke-linejoin="round" />
+
+        <!-- Facial Features -->
+        <!-- Left Closed Smiling Eye -->
+        <path d="M 68 69 C 74 61 84 62 89 70" fill="none" stroke="#1a1e1c" stroke-width="4.5" stroke-linecap="round" />
+        <!-- Right Closed Smiling Eye -->
+        <path d="M 110 69 C 115 61 125 62 130 70" fill="none" stroke="#1a1e1c" stroke-width="4.5" stroke-linecap="round" />
+
+        <!-- Eyebrows / Accents -->
+        <path d="M 72 59 C 75 56 80 57 82 59" fill="none" stroke="#1a1e1c" stroke-width="3" stroke-linecap="round" />
+        <path d="M 116 59 C 118 57 123 56 126 59" fill="none" stroke="#1a1e1c" stroke-width="3" stroke-linecap="round" />
+
+        <!-- Nose -->
+        <path d="M 98 73 C 96 73 95 76 97 78 C 98 80 101 80 102 78 C 104 76 103 73 98 73 Z" fill="#1a1e1c" />
+
+        <!-- Cute Mouth with Open Tongue -->
+        <path d="M 87 79 C 93 84 98 82 99 78 C 100 82 105 84 111 79" fill="none" stroke="#1a1e1c" stroke-width="4" stroke-linecap="round" />
+        <path d="M 94 82 C 94 88 104 88 104 82 Z" fill="#f55d5d" stroke="#1a1e1c" stroke-width="3" stroke-linejoin="round" />
+
+        <!-- Whiskers Left -->
+        <path d="M 64 80 L 48 78" stroke="#1a1e1c" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M 64 87 L 50 88" stroke="#1a1e1c" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M 65 94 L 52 98" stroke="#1a1e1c" stroke-width="3.5" stroke-linecap="round" />
+
+        <!-- Whiskers Right -->
+        <path d="M 134 80 L 150 78" stroke="#1a1e1c" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M 134 87 L 148 88" stroke="#1a1e1c" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M 133 94 L 146 98" stroke="#1a1e1c" stroke-width="3.5" stroke-linecap="round" />
+
+        <!-- Orange Body Side Spot -->
+        <path d="M 45 125 C 43 135 46 142 52 144 C 55 137 54 128 49 123 C 47 123 46 124 45 125 Z" fill="#f57c20" />
+
+        <!-- Left Paw (Holding Gold Coin) -->
+        <path d="M 54 135 C 57 128 66 127 72 132 C 77 137 77 146 72 152 C 66 156 57 154 53 146 C 50 142 51 138 54 135 Z"
+              fill="#ffffff" stroke="#1a1e1c" stroke-width="3.8" stroke-linejoin="round" />
+        <path d="M 64 133 L 65 142" stroke="#1a1e1c" stroke-width="2.5" stroke-linecap="round" />
+        <path d="M 70 137 L 70 145" stroke="#1a1e1c" stroke-width="2.5" stroke-linecap="round" />
+
+        <!-- Gold Lucky Coin (Koban) -->
+        <ellipse cx="89" cy="144" rx="20" ry="24" fill="url(#goldCoin)" stroke="#1a1e1c" stroke-width="4" transform="rotate(-6 89 144)" />
+        <ellipse cx="89" cy="144" rx="14" ry="17" fill="none" stroke="#b87802" stroke-width="2.2" stroke-dasharray="1 0" transform="rotate(-6 89 144)" />
+        <!-- Center Coin Emblem -->
+        <rect x="83.5" y="138.5" width="11" height="11" rx="2" fill="#8e5306" stroke="#1a1e1c" stroke-width="1.8" transform="rotate(45 89 144)" />
+
+        <!-- Right Waving Raised Paw (Maneki Neko Welcoming Arm) -->
+        <path d="M 132 110 C 136 102 144 94 153 92 C 160 91 166 97 165 106 C 164 116 158 126 148 132 C 142 135 136 130 134 122 Z"
+              fill="#ffffff" stroke="#1a1e1c" stroke-width="4" stroke-linejoin="round" />
+        <path d="M 152 97 C 153 103 151 108 147 112" stroke="#1a1e1c" stroke-width="2.8" stroke-linecap="round" />
+        <path d="M 159 101 C 158 107 155 112 151 116" stroke="#1a1e1c" stroke-width="2.8" stroke-linecap="round" />
+
+        <!-- Bottom Sitting Feet Paws -->
+        <!-- Left Foot -->
+        <path d="M 72 165 C 72 158 83 158 87 164 C 90 169 88 174 81 174 C 75 174 72 170 72 165 Z"
+              fill="#ffffff" stroke="#1a1e1c" stroke-width="3.5" />
+        <path d="M 77 165 L 77 172" stroke="#1a1e1c" stroke-width="2.2" stroke-linecap="round" />
+        <path d="M 82 165 L 82 172" stroke="#1a1e1c" stroke-width="2.2" stroke-linecap="round" />
+
+        <!-- Right Foot -->
+        <path d="M 112 165 C 112 158 123 158 127 164 C 130 169 128 174 121 174 C 115 174 112 170 112 165 Z"
+              fill="#ffffff" stroke="#1a1e1c" stroke-width="3.5" />
+        <path d="M 117 165 L 117 172" stroke="#1a1e1c" stroke-width="2.2" stroke-linecap="round" />
+        <path d="M 122 165 L 122 172" stroke="#1a1e1c" stroke-width="2.2" stroke-linecap="round" />
+    </g>
+</svg>
