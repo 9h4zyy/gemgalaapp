@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
 :root {
     --bg: #071b17;
     --panel: #102923;
@@ -185,9 +187,10 @@ a {
 }
 
 .brand-logo {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
     display: block;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
 }
@@ -689,11 +692,11 @@ h1 {
     color: #effff3
 }
 
-/* Withdrawal 2-Column Balanced Grid Layout */
+/* Withdrawal Stacked Layout */
 .withdraw-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 28px;
+    grid-template-columns: 1fr;
+    gap: 40px;
     align-items: start;
 }
 
@@ -739,8 +742,8 @@ h1 {
 
 .withdraw-steps {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 14px;
 }
 
 .wstep {
@@ -1484,4 +1487,492 @@ footer {
         transform: scale(1.18);
         opacity: 1;
     }
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--muted);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--lime);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ==========================================================================
+   Gemgala Link-in-Bio Page Styles
+   ========================================================================== */
+
+.bio-page-container {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.75rem 1.25rem 2rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white, #f4fbf7);
+}
+
+.bio-ambient-bg {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -2 !important;
+    background: radial-gradient(ellipse at 12% 5%, rgba(34, 143, 105, 0.35), transparent 45%),
+                radial-gradient(ellipse at 88% 28%, rgba(201, 255, 117, 0.18), transparent 42%),
+                linear-gradient(165deg, #0d3229 0%, #0a2620 35%, #071b17 70%, #03100d 100%) !important;
+}
+
+.bio-ambient-glow-top {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(158, 244, 205, 0.35) 0%, rgba(201, 255, 117, 0.12) 50%, transparent 75%);
+    filter: blur(65px);
+}
+
+.bio-ambient-glow-bottom {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(201, 255, 117, 0.2) 0%, rgba(16, 41, 35, 0.4) 60%, transparent 80%);
+    filter: blur(70px);
+}
+
+/* Ambient Radial Glow Blobs */
+.ornament-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(60px);
+    pointer-events: none;
+    background: transparent;
+    animation: glowPulse 7s ease-in-out infinite alternate;
+}
+
+.ornament-blob-mint {
+    background: radial-gradient(circle, rgba(158, 244, 205, 0.28) 0%, rgba(158, 244, 205, 0.05) 55%, transparent 70%);
+}
+
+.ornament-blob-lime {
+    background: radial-gradient(circle, rgba(201, 255, 117, 0.22) 0%, rgba(201, 255, 117, 0.04) 55%, transparent 70%);
+}
+
+.ornament-blob-emerald {
+    background: radial-gradient(circle, rgba(34, 143, 105, 0.3) 0%, rgba(34, 143, 105, 0.06) 55%, transparent 70%);
+}
+
+.size-blob-md {
+    width: 18rem;
+    height: 18rem;
+}
+
+.size-blob-xl {
+    width: 36rem;
+    height: 36rem;
+}
+
+.pos-blob-hero-left {
+    top: 5%;
+    left: -10%;
+}
+
+.pos-blob-hero-right {
+    top: 15%;
+    right: -10%;
+}
+
+@keyframes glowPulse {
+    0% {
+        transform: scale(0.92);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+.bio-content-card {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Profile / App Branding Header */
+.bio-profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+.bio-avatar-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.bio-avatar-ornament {
+    position: absolute !important;
+    top: -14px !important;
+    left: -14px !important;
+    width: 120px !important;
+    height: 120px !important;
+    z-index: -1 !important;
+    animation: ornamentSpin 12s linear infinite !important;
+    pointer-events: none !important;
+    max-width: none !important;
+}
+
+@keyframes ornamentSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bio-avatar-box {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    overflow: visible;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bio-avatar-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
+}
+
+.bio-verified-badge {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 26px;
+    height: 26px;
+    border-radius: 9999px;
+    background: var(--lime, #c9ff75);
+    color: #071b17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid #071b17;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.bio-title-heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 0.45rem;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 10px rgba(7, 27, 23, 0.6);
+}
+
+.bio-badge-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: rgba(158, 244, 205, 0.14);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(158, 244, 205, 0.32);
+    padding: 0.35rem 0.9rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--mint, #9ef4cd);
+    text-transform: uppercase;
+}
+
+.bio-tagline-text {
+    font-size: 0.875rem;
+    color: rgba(244, 251, 247, 0.88);
+    margin: 0.65rem 0 0;
+    line-height: 1.45;
+    max-width: 340px;
+}
+
+/* Primary Action Buttons List */
+.bio-actions-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 2.25rem;
+}
+
+.bio-action-pill {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.95rem 1.35rem;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #071b17;
+    text-decoration: none;
+    border-radius: 9999px;
+    box-shadow: 0 6px 20px -3px rgba(7, 27, 23, 0.22), 0 2px 6px -1px rgba(7, 27, 23, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.bio-action-pill:hover {
+    transform: translateY(-3px) scale(1.01);
+    background: #ffffff;
+    color: #0c6a4e;
+    border-color: var(--mint, #9ef4cd);
+    box-shadow: 0 14px 28px -5px rgba(158, 244, 205, 0.42), 0 4px 10px -2px rgba(7, 27, 23, 0.14);
+}
+
+.bio-action-pill:active {
+    transform: translateY(0) scale(0.99);
+}
+
+.bio-pill-left {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.bio-pill-icon-box {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #e3fcf0;
+    color: #0c6a4e;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.bio-action-pill:hover .bio-pill-icon-box {
+    background: #0c6a4e;
+    color: var(--lime, #c9ff75);
+    transform: rotate(5deg) scale(1.08);
+}
+
+.bio-pill-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.bio-pill-arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--muted, #aec5bb);
+    transition: transform 0.25s ease, color 0.25s ease;
+    flex-shrink: 0;
+}
+
+.bio-action-pill:hover .bio-pill-arrow {
+    transform: translateX(4px);
+    color: #0c6a4e;
+}
+
+/* Social Media Dock Section */
+.bio-social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    width: 100%;
+}
+
+.bio-social-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(244, 251, 247, 0.85);
+    margin: 0;
+}
+
+.bio-social-dock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background: rgba(16, 41, 35, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(158, 244, 205, 0.22);
+    box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.28);
+}
+
+.bio-social-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    background: rgba(244, 251, 247, 0.94);
+    color: #071b17;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+.bio-social-circle svg {
+    width: 1.35rem;
+    height: 1.35rem;
+    transition: transform 0.25s ease;
+}
+
+.bio-social-circle:hover {
+    transform: translateY(-4px) scale(1.12);
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.35);
+    background: #ffffff;
+}
+
+.bio-social-circle:hover svg {
+    transform: scale(1.1);
+}
+
+/* Individual Brand Hover Accents */
+.bio-social-tiktok:hover {
+    color: #000000;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.45);
+}
+
+.bio-social-instagram:hover {
+    color: #e1306c;
+    box-shadow: 0 10px 20px -3px rgba(225, 48, 108, 0.45);
+}
+
+.bio-social-threads:hover {
+    color: #000000;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.45);
+}
+
+.bio-social-x:hover {
+    color: #000000;
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.45);
+}
+
+.bio-social-facebook:hover {
+    color: #1877f2;
+    box-shadow: 0 10px 20px -3px rgba(24, 119, 242, 0.45);
+}
+
+.bio-social-youtube:hover {
+    color: #ff0000;
+    box-shadow: 0 10px 20px -3px rgba(255, 0, 0, 0.45);
+}
+
+.bio-social-telegram:hover {
+    color: #229ed9;
+    box-shadow: 0 10px 20px -3px rgba(34, 158, 217, 0.45);
+}
+
+/* Footer */
+.bio-footer-bar {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(244, 251, 247, 0.75);
+    letter-spacing: 0.02em;
+}
+
+.bio-footer-link {
+    color: var(--mint, #9ef4cd);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.bio-footer-link:hover {
+    color: var(--lime, #c9ff75);
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .ornament-blob,
+    .bio-avatar-ornament,
+    .bio-action-pill:hover,
+    .bio-social-circle:hover {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}
+
+/* ==========================================================================
+   HOME HERO: TELEGRAM HELP BUTTON (Get Help on Telegram)
+   ========================================================================== */
+.hero-telegram-cta {
+    margin-top: 12px;
+}
+
+.glass-telegram svg {
+    flex-shrink: 0;
+    color: var(--mint);
+}
+
+.glass-telegram:hover {
+    box-shadow: inset 0 1px 0 #ffffff45, 0 10px 30px rgba(158, 244, 205, .28);
 }

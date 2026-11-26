@@ -1,0 +1,251 @@
+<!-- Ambient Gradient Lighting & Ornaments -->
+<div class="bio-ambient-bg" aria-hidden="true">
+    <div class="bio-ambient-glow-top"></div>
+    <div class="bio-ambient-glow-bottom"></div>
+    <div class="ornament-blob ornament-blob-mint size-blob-xl pos-blob-hero-left"></div>
+    <div class="ornament-blob ornament-blob-lime size-blob-md pos-blob-hero-right"></div>
+</div>
+
+<!-- Main Container -->
+<main class="bio-page-container">
+
+    <div class="bio-content-card">
+
+        <!-- Profile / App Branding Header -->
+        <header class="bio-profile-header">
+            <div class="bio-avatar-wrapper">
+                <svg class="bio-avatar-ornament" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <defs>
+                        <linearGradient id="haloGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#9ef4cd" stop-opacity="0.9" />
+                            <stop offset="50%" stop-color="#c9ff75" stop-opacity="0.9" />
+                            <stop offset="100%" stop-color="#228f69" stop-opacity="0.9" />
+                        </linearGradient>
+                        <filter id="glowHalo" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="60" cy="60" r="56" fill="none" stroke="url(#haloGrad)" stroke-width="2"
+                        stroke-dasharray="8 6" filter="url(#glowHalo)" />
+                    <circle cx="60" cy="60" r="49" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.2" />
+                    <polygon points="60,3 63,8 60,13 57,8" fill="#c9ff75" filter="url(#glowHalo)" />
+                    <polygon points="60,117 63,112 60,107 57,112" fill="#c9ff75" filter="url(#glowHalo)" />
+                    <polygon points="3,60 8,57 13,60 8,63" fill="#9ef4cd" filter="url(#glowHalo)" />
+                    <polygon points="117,60 112,57 107,60 112,63" fill="#228f69" filter="url(#glowHalo)" />
+                </svg>
+                <div class="bio-avatar-box">
+                    <img src="http://gemgalaapp.com/wp-content/uploads/2026/09/gemgala-icon.jpg" alt="Gemgala App Icon"
+                        width="92" height="92" class="bio-avatar-img" fetchpriority="high">
+                    <span class="bio-verified-badge" title="Official Verified Badge" aria-label="Official Verified">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                            fill="currentColor" aria-hidden="true">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <h1 class="bio-title-heading">Gemgala App</h1>
+
+            <span class="bio-badge-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
+                    aria-hidden="true">
+                    <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                Official Agency &amp; Social Hub
+            </span>
+
+            <p class="bio-tagline-text">
+                A live-streaming platform, interactive events, and a trusted rewards program.
+            </p>
+        </header>
+
+        <!-- Primary Action Buttons List -->
+        <nav class="bio-actions-list" aria-label="Tautan Menu Utama Gemgala">
+
+            <!-- 1. Join Us -->
+            <a href="https://getblock.me/u/28002073" target="_blank" rel="noopener noreferrer" class="bio-action-pill"
+                aria-label="Bergabung Sebagai Agency Gemgala">
+                <div class="bio-pill-left">
+                    <div class="bio-pill-icon-box" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <span class="bio-pill-text">Join Us</span>
+                </div>
+                <svg class="bio-pill-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+
+            <!-- 3. WhatsApp Resmi -->
+            <a href="https://wa.me/+6282246864571" target="_blank" rel="noopener noreferrer" class="bio-action-pill"
+                aria-label="Hubungi WhatsApp Resmi Gemgala">
+                <div class="bio-pill-left">
+                    <div class="bio-pill-icon-box" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                        </svg>
+                    </div>
+                    <span class="bio-pill-text">WhatsApp</span>
+                </div>
+                <svg class="bio-pill-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+
+            <!-- 4. Telegram Resmi -->
+            <a href="https://telegram.me/Gemgalaservice" target="_blank" rel="noopener noreferrer"
+                class="bio-action-pill" aria-label="Hubungi Telegram Gemgala">
+                <div class="bio-pill-left">
+                    <div class="bio-pill-icon-box" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+                        </svg>
+                    </div>
+                    <span class="bio-pill-text">Telegram</span>
+                </div>
+                <svg class="bio-pill-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+
+            <!-- 5. Visit the Website -->
+            <a href="https://gemgalaapp.com" target="_blank" rel="noopener noreferrer" class="bio-action-pill"
+                aria-label="Kunjungi Website Resmi Gemgala">
+                <div class="bio-pill-left">
+                    <div class="bio-pill-icon-box" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <span class="bio-pill-text">Visit the Website</span>
+                </div>
+                <svg class="bio-pill-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+
+        </nav>
+
+        <!-- Social Media Dock Section -->
+        <section class="bio-social-section" aria-label="Media Sosial Gemgala">
+            <span class="bio-social-title">Follow Us on Social Media</span>
+
+            <div class="bio-social-dock">
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@gemgalalive" target="_blank" rel="noopener noreferrer"
+                    class="bio-social-circle bio-social-tiktok" aria-label="Kunjungi TikTok Resmi Gemgala"
+                    title="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.91 2.91 0 1 1-2-2.75V9.4a6.35 6.35 0 1 0 5.45 6.27V8.26a8.16 8.16 0 0 0 4.77 1.52V6.69z" />
+                    </svg>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/gemgalalive/" target="_blank" rel="noopener noreferrer"
+                    class="bio-social-circle bio-social-instagram" aria-label="Kunjungi Instagram Resmi Gemgala"
+                    title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+
+                <!-- Threads -->
+                <a href="https://www.threads.com/@gemgalalive" target="_blank" rel="noopener noreferrer"
+                    class="bio-social-circle bio-social-threads" aria-label="Kunjungi Threads Resmi Gemgala"
+                    title="Threads">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor"
+                        aria-hidden="true">
+                        <path
+                            d="M436.8 302C436.2 232.4 398.5 190.5 334.8 190.5C292.3 190.5 256.5 209.7 237.7 240.4L278.9 269.1C289.6 252.3 304.3 238.3 331.3 238.3C361.8 238.3 377.6 255.3 382.1 286.8C367.4 284.5 352.6 283.3 337.5 283.3C255.1 283.3 216.4 320.6 216.4 369.9C216.4 419.2 255.2 449.6 312.3 449.6C375 449.6 412.4 407.4 427.7 355.1C443.6 362.3 454.6 379.1 454.6 404.4C454.6 472 376.6 508.9 310.5 508.9C213 508.9 149.2 444.9 149.2 340.7C149.2 213.1 233.5 131.3 346.8 131.3C422.8 131.3 460.4 164.7 486 209.4L528 179.9C500.2 121.9 438.1 80.4 344.9 80.4C196.4 80.4 95.4 185.8 95.4 338.6C95.4 478.4 194.3 559.5 312.1 559.5C409.5 559.5 507.9 502.7 507.9 405.5C507.9 354.7 478.7 321 436.7 302zM310.4 398.9C288.9 398.9 270 388.7 270 369.9C270 340.3 306.4 331.3 342 331.3C355.5 331.3 368.8 332.2 380.5 334.8C372.1 373.3 347.1 399 310.5 399L310.5 399z" />
+                    </svg>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://x.com/gemgalalive" target="_blank" rel="noopener noreferrer"
+                    class="bio-social-circle bio-social-x" aria-label="Kunjungi X (Twitter) Resmi Gemgala"
+                    title="X (Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.967 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=61594494883670" target="_blank"
+                    rel="noopener noreferrer" class="bio-social-circle bio-social-facebook"
+                    aria-label="Kunjungi Facebook Resmi Gemgala" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@Gemgalalive" target="_blank" rel="noopener noreferrer"
+                    class="bio-social-circle bio-social-youtube" aria-label="Kunjungi YouTube Resmi Gemgala"
+                    title="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.5v-7l6.2 3.5z" />
+                    </svg>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bio-footer-bar">
+        &copy; <span id="bio-current-year"></span>
+        <a href="https://gemgalaapp.com" class="bio-footer-link" target="_blank" rel="noopener noreferrer">Gemgala
+            App</a>. All rights reserved.
+    </footer>
+
+</main>
+
+<!-- Internal Javascript (strictly inside body, no external js files) -->
+<script>
+    (function () {
+        'use strict';
+
+        // 1. Dynamic Year
+        var yearEl = document.getElementById('bio-current-year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+    })();
+</script>
